@@ -8,7 +8,7 @@ Automate your business processes with disQo.ai Workflows. Streamline repetitive 
 </Info>
 
 ## What are Workflows?
-Workflows in disQo.ai let you automate multi-step processes by connecting triggers, actions, and integrations. You can create workflows from scratch or use pre-built templates to get started quickly.
+Workflows in disQo.ai let you automate multi-step processes by connecting triggers, actions, integrations, and knowledge base context. You can create workflows from scratch or use pre-built templates to get started quickly.
 
 <CardGroup cols={2}>
 <Card title="Workflow Templates" icon="template" href="/workflows/workflow-templates">
@@ -50,18 +50,29 @@ Workflows in disQo.ai let you automate multi-step processes by connecting trigge
     </Frame>
 </Step>
 <Step title="Design Your Workflow">
-    Use the visual workflow canvas to add triggers, actions, and integrations. Drag and drop to build your automation.
+    Use the visual workflow canvas to add triggers, actions, and integrations. You can also add context via knowledge base files — these provide background information, domain-specific terms, or process definitions that help AI agents interpret tasks more intelligently. Drag and drop to customise your automation.
     <Frame caption="Workflow Autoamtion Canvas UI">
         <img src="/images/workflow-canvas.png" alt="" />
     </Frame>
 </Step>
 <Step title="Add Actions">
-    Choose from a variety of actions (e.g., send email, fetch Jira tickets, generate test cases) to automate your process.
+    Choose from a variety of actions (e.g., get Jira tickets, analyse requirements, generate test cases) to automate your flow. Each action performs a specific AI-assisted task.
     <Frame caption="Add Action to Workflow UI">
         <img src="/images/add-action.png" alt="" />
     </Frame>
     <Tip>
     For a detailed explanation of each action and its configuration, visit the <a href="/workflows/actions">Actions</a> page.
+    </Tip>
+</Step>
+<Step title="Edit Your Action">
+    To get the best results from an agent (like Analyse Requirements), provide:
+    Context – Refer to knowledge base files that contain background or supporting info.
+    Task – Clearly describe what you want the agent to do, e.g., "Analyse the requirements in The User Story 1 from the attached file".
+    <Frame caption="Add Action to Workflow UI">
+        <img src="/images/add-action.png" alt="" />
+    </Frame>
+    <Tip>
+    Context defines what the agent knows. Task defines what the agent should do.
     </Tip>
 </Step>
 </Steps>
