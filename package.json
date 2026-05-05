@@ -1,0 +1,20 @@
+{
+  "name": "docs.disqoai.com",
+  "version": "1.0.0",
+  "description": "Welcome to the disQo.ai documentation repository. disQo.ai is an AI-powered, agentic workflow automation platform that enables users to augment their work by creating AI-powered workflows and agents tailored to various roles within the Software Development Life Cycle (SDLC).",
+  "main": "index.js",
+  "scripts": {
+    "start": "mint dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiQtoQ-UK/docs.disqoai.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiQtoQ-UK/docs.disqoai.com/issues"
+  },
+  "homepage": "https://github.com/tiQtoQ-UK/docs.disqoai.com#readme"
+}
