@@ -4,83 +4,88 @@ description: "Learn how to create and manage automated workflows in disQo.ai"
 ---
 
 <Info>
-Automate your business processes with disQo.ai Workflows. Streamline repetitive tasks, integrate with your tools, and boost productivity—all from a visual, no-code interface.
+  Automate your business processes with disQo.ai Workflows. Streamline repetitive tasks, integrate with your tools, and boost productivity—all from a visual, no-code interface.
 </Info>
 
 ## What are Workflows?
+
 Workflows in disQo.ai let you automate multi-step processes by connecting triggers, actions, integrations, and knowledge base context. You can create workflows from scratch or use pre-built templates to get started quickly.
 
 <CardGroup cols={2}>
-<Card title="Workflow Templates" icon="template" href="/workflows/workflow-templates">
+  <Card title="Workflow Templates" icon="layout-template" href="/workflows/workflow-templates">
     Explore ready-to-use templates for common business, QA, and engineering tasks.
-</Card>
-<Card title="Workflow Actions" icon="bolt" href="/workflows/actions">
+  </Card>
+
+  <Card title="Workflow Actions" icon="bolt" href="/workflows/actions">
     See all available actions and integrations you can use in your workflows.
-</Card>
+  </Card>
 </CardGroup>
 
 ## Getting Started: Creating a Workflow
 
 <Steps>
-<Step title="Open the Workflows Page">
-    Navigate to <b>Workflows</b> from the sidebar to view and manage your workflows.
-    <Frame caption="Workflows Page UI">
-        <img src="/images/workflows-dashboard.png" alt="" />
+  <Step title="Open the Workflows Page">
+    Navigate to  from the sidebar to view and manage your workflows.
+  </Step>
+  <Step title="Create a New Workflow">
+    Click  to start. Choose to build from scratch or use a template.
+
+    <Frame>
+      ![Screenshot 2026 06 05 154649](/images/Screenshot-2026-06-05-154649.png)
     </Frame>
-</Step>
-<Step title="Create a New Workflow">
-    Click <b>Create new workflow</b> to start. Choose to build from scratch or use a template.
-    <Frame caption="Create workflow options (scratch or template) UI">
-        <img src="/images/create-workflow-options.png" alt="" />
-    </Frame>
-</Step>
-<Step title="Select a Template (Optional)">
+  </Step>
+  <Step title="Select a Template (Optional)">
     Browse and select from featured, business analysis, engineering, or QA templates.
+
     <Frame caption="Template selection UI">
-        <img src="/images/template-selection.png" alt="" />
+      ![Screenshot 2026 06 05 154649](/images/Screenshot-2026-06-05-154649.png)
     </Frame>
+
     <Note>
-    For a full list of templates and their details, see the <a href="/workflows/workflow-templates">Templates</a> page.
+      For a full list of templates and their details, see the  page.
     </Note>
-</Step>
-<Step title="Explore Templates">
-    View all available templates, including those coming soon, in the Templates section.
-    <Frame caption="Templates Overview in Canvas UI">
-        <img src="/images/templates-overview.png" alt="" />
-    </Frame>
-</Step>
-<Step title="Design Your Workflow">
+  </Step>
+  <Step title="Design Your Workflow">
     Use the visual workflow canvas to add triggers, actions, and integrations. You can also add context via knowledge base files — these provide background information, domain-specific terms, or process definitions that help AI agents interpret tasks more intelligently. Drag and drop to customise your automation.
-    <Frame caption="Workflow Autoamtion Canvas UI">
-        <img src="/images/workflow-canvas.png" alt="" />
+
+    <Frame caption="Workflow Automation Canvas UI">
+      ![Screenshot 2026 06 05 155035](/images/Screenshot-2026-06-05-155035.png)
     </Frame>
-</Step>
-<Step title="Add Actions">
-    Choose from a variety of actions (e.g., get Jira tickets, analyse requirements, generate test cases) to automate your flow. Each action performs a specific AI-assisted task.
+  </Step>
+  <Step title="Add Actions">
+    Choose from a variety of actions (e.g., get Jira tickets, analyse requirements, generate test cases, accessibility agent) to automate your flow. Each action performs a specific AI-assisted task.
+
     <Frame caption="Add Action to Workflow UI">
-        <img src="/images/add-action.png" alt="" />
+      ![Screenshot 2026 06 05 155128](/images/Screenshot-2026-06-05-155128.png)
     </Frame>
+
     <Tip>
-    For a detailed explanation of each action and its configuration, visit the <a href="/workflows/actions">Actions</a> page.
+      For a detailed explanation of each action and its configuration, visit the  page.
     </Tip>
-</Step>
-<Step title="Edit Your Action">
-    To get the best results from an agent (like Analyse Requirements), provide:
-    Context – Refer to knowledge base files that contain background or supporting info.
-    Task – Clearly describe what you want the agent to do, e.g., "Analyse the requirements in The User Story 1 from the attached file".
+  </Step>
+  <Step title="Edit Your Action">
+    To get the best results from an agent (like Analyse Requirements), provide: Context – Refer to knowledge base files that contain background or supporting info. Task – Clearly describe what you want the agent to do, e.g., "Analyse the requirements in The User Story 1 from the attached file".
+
     <Frame caption="Add Action to Workflow UI">
-        <img src="/images/add-action.png" alt="" />
+      ![Screenshot 2026 06 05 155455](/images/Screenshot-2026-06-05-155455.png)
     </Frame>
+
     <Tip>
-    Context defines what the agent knows. Task defines what the agent should do.
+      Context defines what the agent knows. Task defines what the agent should do.
     </Tip>
-</Step>
+  </Step>
 </Steps>
 
 ## Next Steps
-- <a href="/workflows/workflow-templates">Browse workflow templates</a> for inspiration or quick setup.
-- <a href="/workflows/actions">Learn about available actions</a> and how to use them in your automations.
+
+- Why not try building a workflow with these steps:
+  - Scheduled Trigger, e.g., every Monday, 8 am.
+  - Accessibility Agent with your company website URL.
+  - Add Action: Analyse Requirements with a task: pick up failed items and create user stories based on them.
+  - Add Action: Generate Test Cases with a task: create test cases from user stories in the previous action.
+  - Add Action: Send Email with a task: your test cases are ready!
+  - And go to [disQo.ai](http://disQo.ai) to check and use your test cases.
 
 <Check>
-You're ready to build your first workflow! For advanced tips and troubleshooting, see the detailed guides in each section.
+  You're ready to build your first workflow! For advanced tips and troubleshooting, see the detailed guides in each section.
 </Check>
