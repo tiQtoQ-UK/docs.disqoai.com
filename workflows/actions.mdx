@@ -4,99 +4,107 @@ description: "Learn about the different actions available in disQo.ai workflows"
 ---
 
 <Info>
-Actions are the building blocks of your workflows. Each action performs a specific task, such as sending an email, fetching data, or generating test cases. Combine actions to automate complex processes.
+  Actions are the building blocks of your workflows. Each action performs a specific task, such as sending an email, fetching data, or generating test cases. Combine actions to automate complex processes.
 </Info>
 
 <Tip>
-More actions are coming soon in future releases—stay tuned for new integrations and automation capabilities!
+  More actions are coming soon in future releases—stay tuned for new integrations and automation capabilities!
 </Tip>
 
 ## Adding Actions to Your Workflow
 
-To add an action, click the <b>+</b> button on the workflow canvas and select from the available actions.
+To add an action, click the  button on the workflow canvas and select from the available actions.
 
 <Frame caption="Add Action UI">
-    <img src="/images/add-action.png" alt="" />
+  ![Screenshot 2026 06 05 155128](/images/Screenshot-2026-06-05-155128.png)
 </Frame>
 
 ## Action Categories
 
-| Category            | Example Actions           |
-|---------------------|--------------------------|
-| Notification        | Send Email               |
-| Integration         | Get Jira Tickets, Knowledge Base |
-| Quality Assurance   | Generate Test Cases, Generate Test Data, Generate Test Automation Script |
-| Business Analysis   | Requirement Analyser     |
+| Category | Example Actions |
+| --- | --- |
+| Notification | Send Email |
+| Integration | Get Jira Tickets, Knowledge Base |
+| Quality Assurance | Generate Test Cases, Generate Test Data, Generate Test Automation Script, Accessibility Agent |
+| Business Analysis | Requirement Analyser |
 
 <AccordionGroup>
-<Accordion title="Send Email (Notification)">
-- **Description:** Send an email notification to specified recipients.
-- **Parameters:**
-    - Recipient email(s)
-    - Subject
-    - Message body
-- **Use cases:** Notify stakeholders of workflow events, send alerts, or share results automatically.
-</Accordion>
+  <Accordion title="Send Email (Notification)">
+    - **Description:** Send an email notification to specified recipients.
+    - **Parameters:**
+      - Recipient email(s)
+      - Subject
+      - Message body
+    - **Use cases:** Notify stakeholders of workflow events, send alerts, or share results automatically.
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Get Jira Tickets (Integration)">
-- **Description:** Fetch tickets from Jira based on specific criteria.
-- **Parameters:**
-    - Jira project/key
-    - Query/filter
-- **Use cases:** Integrate with your issue tracking system to automate ticket-based workflows.
-</Accordion>
+  <Accordion title="Get Jira Tickets (Integration)">
+    - **Description:** Fetch tickets from Jira based on specific criteria.
+    - **Parameters:**
+      - Jira project/key
+      - Query/filter
+    - **Use cases:** Integrate with your issue tracking system to automate ticket-based workflows.
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Knowledge Base (Integration)">
-- **Description:** Fetch files or information from your Knowledge Base with specific criteria.
-- **Parameters:**
-    - Search query
-    - Filters (tags, date, etc.)
-- **Use cases:** Use knowledge base content as input for further workflow steps (e.g., requirement analysis).
-</Accordion>
+  <Accordion title="Knowledge Base (Integration)">
+    - **Description:** Fetch files or information from your Knowledge Base with specific criteria.
+    - **Parameters:**
+      - Search query
+      - Filters (tags, date, etc.)
+    - **Use cases:** Use knowledge base content as input for further workflow steps (e.g., requirement analysis).
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Generate Test Cases (Quality Assurance)">
-- **Description:** Automatically generate comprehensive test cases from requirements or Jira tickets using AI.
-- **Parameters:**
-    - Input requirements or ticket references
-- **Use cases:** Accelerate QA by generating test cases for manual or automated testing.
-</Accordion>
+  <Accordion title="Generate Test Cases (Quality Assurance)">
+    - **Description:** Automatically generate comprehensive test cases from requirements or Jira tickets using AI.
+    - **Parameters:**
+      - Input requirements or ticket references
+    - **Use cases:** Accelerate QA by generating test cases for manual or automated testing.
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Generate Test Data (Quality Assurance)">
-- **Description:** Create diverse and realistic test data for comprehensive testing.
-- **Parameters:**
-    - Data types
-    - Constraints
-- **Use cases:** Populate test environments with realistic data sets.
-</Accordion>
+  <Accordion title="Generate Test Data (Quality Assurance)">
+    - **Description:** Create diverse and realistic test data for comprehensive testing.
+    - **Parameters:**
+      - Data types
+      - Constraints
+    - **Use cases:** Populate test environments with realistic data sets.
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Generate Test Automation Script (Quality Assurance)">
-- **Description:** Generate ready-to-use automation scripts tailored to your testing frameworks.
-- **Parameters:**
-    - Test cases or requirements
-    - Target framework
-- **Use cases:** Speed up test automation by generating scripts for frameworks like Selenium, Cypress, etc.
-</Accordion>
+  <Accordion title="Generate Test Automation Script (Quality Assurance)">
+    - **Description:** Generate ready-to-use automation scripts tailored to your testing frameworks.
+    - **Parameters:**
+      - Test cases or requirements
+      - Target framework
+    - **Use cases:** Speed up test automation by generating scripts for frameworks like Selenium, Cypress, etc.
+  </Accordion>
+
+  <Accordion title="Accessibility Agent">
+    - Description: Analyse and improve UI accessibility for all users using AI.
+    - **Parameters:**
+      - Page URL
+      - WCAG 2 Level
+    - **Use cases:** Analyse a page URL for accessibility issues against the selected WCAG 2 level and receive actionable recommendations to improve compliance and usability.
+  </Accordion>
 </AccordionGroup>
 
 <AccordionGroup>
-<Accordion title="Requirement Analyser (Business Analysis)">
-- **Description:** Analyse and enhance project requirements for clarity and completeness using AI.
-- **Parameters:**
-    - Requirements document or text
-- **Use cases:** Improve requirement quality before development or testing.
-</Accordion>
+  <Accordion title="Requirement Analyser (Business Analysis)">
+    - **Description:** Analyse and enhance project requirements for clarity and completeness using AI.
+    - **Parameters:**
+      - Requirements document or text
+    - **Use cases:** Improve requirement quality before development or testing.
+  </Accordion>
 </AccordionGroup>
 
 <Note>
-Actions can be combined and customised in any workflow. For inspiration, see the <a href="/workflows/workflow-templates">Templates</a> page, or visit the <a href="/workflows/overview">Workflows Overview</a> for a step-by-step guide.
+  Actions can be combined and customised in any workflow. For inspiration, see the  page, or visit the  for a step-by-step guide.
 </Note>
