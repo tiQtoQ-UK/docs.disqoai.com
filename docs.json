@@ -32,6 +32,13 @@
         ]
       },
       {
+        "group": "What's New",
+        "icon": "sparkles",
+        "pages": [
+          "whats-new/release-notes"
+        ]
+      },
+      {
         "group": "Platform",
         "icon": "layers",
         "pages": [
