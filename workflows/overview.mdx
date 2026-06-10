@@ -76,15 +76,32 @@ Workflows in disQo.ai let you automate multi-step processes by connecting trigge
   </Step>
 </Steps>
 
+## Using Criteria Builder in Workflows
+
+The Criteria Builder lets you define which Jira or Azure DevOps tickets a workflow should retrieve when it runs. You can use **Basic** criteria to build a filter directly in disQo.ai, or use **Custom** criteria to select filters or queries already saved in the connected Jira or ADO project.
+
+In workflows, criteria are saved as part of the workflow node configuration. This means the workflow will apply the same criteria each time it runs, including scheduled runs. The matching tickets may change over time as new tickets are created, updated, or moved between statuses, sprints, or assignees.
+
+<Frame>
+  ![Workflow ADO Tickes Selected](/images/Workflow---ADO-Tickes-Selected.png)
+</Frame>
+
+For example, you can configure a workflow to retrieve all tickets assigned to you in the current sprint, or use a saved Jira filter or ADO query maintained by your team.
+
 ## Next Steps
 
-- Why not try building a workflow with these steps:
-  - Scheduled Trigger, e.g., every Monday, 8 am.
-  - Accessibility Agent with your company website URL.
-  - Add Action: Analyse Requirements with a task: pick up failed items and create user stories based on them.
-  - Add Action: Generate Test Cases with a task: create test cases from user stories in the previous action.
-  - Add Action: Send Email with a task: your test cases are ready!
-  - And go to [disQo.ai](http://disQo.ai) to check and use your test cases.
+Why not try building a workflow with these steps?
+
+1. Add a **Scheduled Trigger**, for example, every Monday at 8:00 AM.
+2. Add the **Accessibility Agent** and provide your company website URL.
+3. Add the **Analyse Requirements** action with a task such as:\
+   _Review the failed accessibility items and create user stories based on them._
+4. Add the **Generate Test Cases** action with a task such as:\
+   _Create test cases from the user stories generated in the previous action._
+5. Add the **Send Email** action with a message such as:\
+   _Your test cases are ready._
+
+Once the workflow has run, go to [disQo.ai](http://disQo.ai) to review and use your generated test cases.
 
 <Check>
   You're ready to build your first workflow! For advanced tips and troubleshooting, see the detailed guides in each section.
