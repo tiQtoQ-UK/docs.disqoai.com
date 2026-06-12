@@ -1,0 +1,51 @@
+---
+title: "Release Notes"
+description: "Latest platform updates, improvements, and fixes"
+---
+
+## 1.4.0 - Seamless Integration and Image Workflows (29/05/2026)
+
+### Added
+
+- Direct write-back to Azure DevOps and Jira from disQo.ai.
+- Write-back support for uploading generated user stories or test cases into your Azure DevOps or Jira project.
+- Write-back actions to rewrite an existing user story and add comments to an existing story.
+- Image recognition in chats and workflows to generate user stories or test cases from screenshots.
+
+### Improved
+
+- A more seamless path from content generation in disQo.ai to updating delivery tools (Azure DevOps and Jira).
+- Better workflow coverage for image-led requirements and testing inputs.
+- AutoQA: Improved execution stability and step pass/fail accuracy.
+- AutoQA: Better visibility of results and logs.
+- AutoQA: Smoother retry behaviour for failed runs.
+- AutoQA: Higher-quality generated Playwright test artefacts.
+
+## 1.3.0 - Image Chat Support (01/05/2026)
+
+### Added
+
+- Image support in existing agents: images can now be uploaded to the knowledge base and sent to agents, with responses based on the images provided.
+- AutoQA tracking and analytics in the sidebar and analytics views, including how many tests were generated and executed.
+- Automatic detection of deployments: if disQo.ai is open in a tab and a deployment happens in the background, users are now prompted to refresh before continuing.
+- Specialised TDD agents for the development team to add or improve codebases by writing unit tests.
+
+### Improved
+
+- Audience control for AutoQA in production, with a staged preview rollout for internal users.
+- Result views for AutoQA outputs.
+
+## 1.2.0 - Chat Memory (17/04/2026)
+
+### Added
+
+- Chat memory support to help agents retain useful context across conversations.
+
+### Improved
+
+- Better continuity in long-running chat sessions.
+- Smoother handover between related tasks inside the same workflow.
+
+### Fixed
+
+- Resolved several issues where context was not consistently available between turns.
