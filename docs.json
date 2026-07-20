@@ -77,7 +77,8 @@
             "group": "Integrations",
             "icon": "plug",
             "pages": [
-              "integrations/overview"
+              "integrations/overview",
+              "integrations/integrations-types"
             ]
           },
           {
