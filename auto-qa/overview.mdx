@@ -1,0 +1,282 @@
+---
+title: "Overview"
+description: "Learn how to generate, run, and review automated browser tests with Auto QA in disQo.ai"
+---
+
+## What is Auto QA?
+Auto QA is an AI-powered testing assistant that helps you:
+
+- Generate test cases from your web application
+- Execute tests in a real browser environment
+- Review results with logs, screenshots, and other evidence
+- Measure time and cost savings from automation
+
+Starting with a website URL and a simple prompt, Auto QA takes you from test generation to execution and results in a single workflow.
+
+---
+
+## Availability
+Auto QA is currently available to:
+
+- Internal tiQtoQ teams and contractors
+
+We are rolling this feature out gradually to ensure the best experience.
+
+If you would like to enable Auto QA for your organisation or learn more, please contact our sales team at [enquiries@tiqtoq.co.uk](mailto:enquiries@tiqtoq.co.uk).
+
+---
+
+## Getting Started
+
+### 1. Create a Project
+Create a project by providing:
+
+- Project name
+- Base URL
+- User role (for example, Customer or Administrator)
+
+This provides the context Auto QA uses to generate relevant tests.
+
+### 2. Add Credentials (Optional)
+If your application requires authentication, add credentials under **Settings -> Configs**.
+
+Credentials are:
+
+- Securely stored
+- Encrypted
+- Never displayed after saving
+- Only used during test execution
+
+### 3. Enter the Workspace
+Each project contains three main areas:
+
+- **Chat**: Generate tests using natural language
+- **Test Cases**: Review generated test cases before execution
+- **Executions**: Monitor test runs and review results
+
+---
+
+## Creating Test Cases
+Describe the flow you want to test.
+
+Example:
+
+> Generate 2 test cases for navigating to the Contact Us page.
+
+Auto QA will:
+
+- Analyse your application
+- Generate a test plan
+- Create structured test cases
+- Prepare automation scripts for execution
+
+---
+
+## Writing Better Prompts
+Auto QA works best when your prompt is clear, focused, and describes the outcome you expect.
+
+Each Auto QA run is based on one prompt. The selected project and environment provide the website URL, so you do not need to paste the URL into the chat unless you are intentionally testing a different target.
+
+A good prompt usually includes:
+
+- What you want to test
+- Which page, feature, or user journey matters
+- What a successful result looks like
+- Whether the expected result is success or failure
+- Any important conditions, such as role, account type, or test data
+
+### Prompt pattern
+Use this structure:
+
+> Test [feature or flow]. A pass means [clear expected result]. Focus on [specific page, role, condition, or limitation].
+
+### Good prompt examples
+**Login flow**
+
+> Test the login flow. A pass means a valid user can sign in, land on the dashboard, and see the main navigation.
+
+**Contact form**
+
+> Test the contact form. A pass means required fields show validation when left empty, and the form submits successfully when valid details are entered.
+
+**Search journey**
+
+> Test the product search journey. A pass means a user can search for a product, see relevant results, open a product page, and view the main product details.
+
+**Negative login test**
+
+> Test failed login with invalid credentials. This test is meant to fail. A pass means the user is not signed in and a clear error message is shown.
+
+**Authenticated flow**
+
+> Test the account area using the saved test credentials. A pass means the user can sign in, open the account page, and view their profile details.
+
+### Weak prompts to avoid
+Avoid prompts that are too broad or unclear, such as:
+
+- test the site
+- check everything
+- see if login works
+- test this and also test another website
+
+These prompts usually produce weaker results because Auto QA cannot tell exactly what to test or what success should look like.
+
+### Tips for better results
+
+- Keep each run focused on one site and one clear objective.
+- Let the selected environment provide the site URL.
+- Include clear pass criteria.
+- Mention the relevant user role or account type if it matters.
+- If failure is the expected outcome, say that clearly.
+- Do not paste passwords, tokens, card details, or other sensitive information into the prompt. Use saved credentials instead.
+
+---
+
+## Reviewing Test Cases
+Before execution you can:
+
+- Review generated test cases
+- Inspect steps and expected results
+- Select which test cases to execute
+
+Only selected test cases will be included in the execution.
+
+### Before you click Confirm & Run
+After Auto QA generates test cases, review them before execution. Check that:
+
+- The test case titles match what you asked for
+- The steps make sense for the real UI
+- The expected results are clear
+- Negative tests are marked as intentional
+- Nothing important is missing
+- Nothing irrelevant has been added
+
+Only confirm execution when the generated test cases reflect what you want Auto QA to run.
+
+---
+
+## Running Tests
+Before execution you will see a summary of the selected test cases.
+
+You can:
+
+- Confirm & Run
+- Cancel
+
+During execution Auto QA:
+
+- Runs tests in a real browser
+- Securely uses stored credentials (if required)
+- Shows execution progress
+- Captures evidence
+
+---
+
+## Viewing Results
+After execution you can review:
+
+**Execution summary**
+
+- Total tests
+- Passed and failed tests
+- Execution duration
+
+**Per-test details**
+
+- Execution steps
+- Failure reason (where applicable)
+- Logs
+- Screenshots
+- Videos
+- Automation scripts
+
+---
+
+## Downloading Results
+Download:
+
+- Individual evidence items
+- The complete execution as a ZIP package
+
+Downloads may include:
+
+- Logs
+- Screenshots
+- Videos
+- Execution summary
+
+---
+
+## Retesting
+You can retest from:
+
+- Test Cases
+- Execution History
+
+Retesting runs the existing automation scripts again without generating new test cases, making it easy to validate fixes after changes.
+
+---
+
+## Execution History
+Auto QA stores previous executions so you can:
+
+- Review past runs
+- Retest existing executions
+- Download previous reports
+
+---
+
+## Analytics
+Auto QA provides usage and ROI reporting, including:
+
+- Generated test cases
+- Executed test cases
+- Total sessions
+- Estimated time saved
+- Estimated cost savings
+
+Time and cost savings are calculated using configurable effort estimates and an average QA hourly rate.
+
+---
+
+## Security
+
+- Credentials are securely stored and encrypted.
+- Secrets are never exposed to the AI or user interface.
+- Data is isolated per organisation.
+- Auto QA data is not used to train AI models.
+
+---
+
+## Current MVP Limitations
+Auto QA currently does not support:
+
+- CAPTCHA or multi-factor authentication (MFA)
+- Payment processing
+- Email verification flows
+- Highly dynamic or real-time applications
+- VPN-only or restricted network environments
+
+---
+
+## Best Practices
+
+- Start with simple user journeys.
+- Describe the flow clearly.
+- Add credentials for authenticated areas.
+- Review generated test cases before execution.
+- Use Retest after application changes.
+
+---
+
+## Need Help?
+If a test does not behave as expected:
+
+- Review the execution logs
+- Inspect the captured evidence
+- Verify your credentials and application access
+
+---
+
+## Summary
+Auto QA enables you to generate automated tests from natural language, execute them in a browser, review detailed evidence, and understand the value delivered through built-in analytics, all from a single workspace.
