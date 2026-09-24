@@ -74,6 +74,16 @@
             ]
           },
           {
+            "group": "Collaboration",
+            "icon": "users-round",
+            "pages": [
+              "collaboration/overview",
+              "collaboration/spaces",
+              "collaboration/shared-knowledge-base",
+              "collaboration/roles-and-permissions"
+            ]
+          },
+          {
             "group": "Integrations",
             "icon": "plug",
             "pages": [
